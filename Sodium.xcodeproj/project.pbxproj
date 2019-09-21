@@ -3,11 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3672ACB7233613B900F9727B /* libsodium-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DD271D28D89F00B97D7E /* libsodium-macOS.a */; };
+		3672ACCE2336205C00F9727B /* crypto_kx.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACBD2336205A00F9727B /* crypto_kx.h */; };
+		3672ACCF2336205C00F9727B /* crypto_kx.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACBD2336205A00F9727B /* crypto_kx.h */; };
+		3672ACD02336205C00F9727B /* crypto_aead_xchacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACBE2336205B00F9727B /* crypto_aead_xchacha20poly1305.h */; };
+		3672ACD12336205C00F9727B /* crypto_aead_xchacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACBE2336205B00F9727B /* crypto_aead_xchacha20poly1305.h */; };
+		3672ACD22336205C00F9727B /* crypto_secretbox_xchacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACBF2336205B00F9727B /* crypto_secretbox_xchacha20poly1305.h */; };
+		3672ACD32336205C00F9727B /* crypto_secretbox_xchacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACBF2336205B00F9727B /* crypto_secretbox_xchacha20poly1305.h */; };
+		3672ACD42336205C00F9727B /* crypto_kdf.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC02336205B00F9727B /* crypto_kdf.h */; };
+		3672ACD52336205C00F9727B /* crypto_kdf.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC02336205B00F9727B /* crypto_kdf.h */; };
+		3672ACD62336205C00F9727B /* crypto_secretstream_xchacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC12336205B00F9727B /* crypto_secretstream_xchacha20poly1305.h */; };
+		3672ACD72336205C00F9727B /* crypto_secretstream_xchacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC12336205B00F9727B /* crypto_secretstream_xchacha20poly1305.h */; };
+		3672ACD82336205C00F9727B /* crypto_stream_xchacha20.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC22336205B00F9727B /* crypto_stream_xchacha20.h */; };
+		3672ACD92336205C00F9727B /* crypto_stream_xchacha20.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC22336205B00F9727B /* crypto_stream_xchacha20.h */; };
+		3672ACDA2336205C00F9727B /* crypto_scalarmult_ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC32336205B00F9727B /* crypto_scalarmult_ed25519.h */; };
+		3672ACDB2336205C00F9727B /* crypto_scalarmult_ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC32336205B00F9727B /* crypto_scalarmult_ed25519.h */; };
+		3672ACDC2336205C00F9727B /* crypto_scalarmult_ristretto255.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC42336205B00F9727B /* crypto_scalarmult_ristretto255.h */; };
+		3672ACDD2336205C00F9727B /* crypto_scalarmult_ristretto255.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC42336205B00F9727B /* crypto_scalarmult_ristretto255.h */; };
+		3672ACDE2336205C00F9727B /* crypto_box_curve25519xchacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC52336205B00F9727B /* crypto_box_curve25519xchacha20poly1305.h */; };
+		3672ACDF2336205C00F9727B /* crypto_box_curve25519xchacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC52336205B00F9727B /* crypto_box_curve25519xchacha20poly1305.h */; };
+		3672ACE02336205C00F9727B /* crypto_kdf_blake2b.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC62336205B00F9727B /* crypto_kdf_blake2b.h */; };
+		3672ACE12336205C00F9727B /* crypto_kdf_blake2b.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC62336205B00F9727B /* crypto_kdf_blake2b.h */; };
+		3672ACE22336205C00F9727B /* crypto_core_ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC82336205B00F9727B /* crypto_core_ed25519.h */; };
+		3672ACE32336205C00F9727B /* crypto_core_ed25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC82336205B00F9727B /* crypto_core_ed25519.h */; };
+		3672ACE42336205C00F9727B /* crypto_core_curve25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC92336205B00F9727B /* crypto_core_curve25519.h */; };
+		3672ACE52336205C00F9727B /* crypto_core_curve25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACC92336205B00F9727B /* crypto_core_curve25519.h */; };
+		3672ACE62336205C00F9727B /* crypto_pwhash_argon2id.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACCA2336205B00F9727B /* crypto_pwhash_argon2id.h */; };
+		3672ACE72336205C00F9727B /* crypto_pwhash_argon2id.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACCA2336205B00F9727B /* crypto_pwhash_argon2id.h */; };
+		3672ACE82336205C00F9727B /* randombytes_internal_random.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACCB2336205B00F9727B /* randombytes_internal_random.h */; };
+		3672ACE92336205C00F9727B /* randombytes_internal_random.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACCB2336205B00F9727B /* randombytes_internal_random.h */; };
+		3672ACEA2336205C00F9727B /* sodium_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACCC2336205B00F9727B /* sodium_lib.h */; };
+		3672ACEB2336205C00F9727B /* sodium_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACCC2336205B00F9727B /* sodium_lib.h */; };
+		3672ACEC2336205C00F9727B /* crypto_core_ristretto255.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACCD2336205C00F9727B /* crypto_core_ristretto255.h */; };
+		3672ACED2336205C00F9727B /* crypto_core_ristretto255.h in Headers */ = {isa = PBXBuildFile; fileRef = 3672ACCD2336205C00F9727B /* crypto_core_ristretto255.h */; };
 		36A8DCEE1D28D81900B97D7E /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB61D28D81900B97D7E /* core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DCEF1D28D81900B97D7E /* crypto_aead_aes256gcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB71D28D81900B97D7E /* crypto_aead_aes256gcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DCF01D28D81900B97D7E /* crypto_aead_chacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB81D28D81900B97D7E /* crypto_aead_chacha20poly1305.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -67,7 +99,7 @@
 		36A8DD2B1D28D9AB00B97D7E /* sodium-lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DD2A1D28D9AB00B97D7E /* sodium-lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD561D28DC1B00B97D7E /* Sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DD551D28DB9400B97D7E /* Sodium.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD571D28DC1C00B97D7E /* Sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DD551D28DB9400B97D7E /* Sodium.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36A8DD591D28DC4600B97D7E /* libsodium-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DD521D28DAD000B97D7E /* libsodium-iOS.a */; };
+		36A8DD591D28DC4600B97D7E /* libsodium-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DD521D28DAD000B97D7E /* libsodium-iOS.a */; platformFilter = ios; };
 		36A8DD5A1D28DC4F00B97D7E /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB61D28D81900B97D7E /* core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD5B1D28DC4F00B97D7E /* crypto_aead_aes256gcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB71D28D81900B97D7E /* crypto_aead_aes256gcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD5C1D28DC4F00B97D7E /* crypto_aead_chacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB81D28D81900B97D7E /* crypto_aead_chacha20poly1305.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -149,6 +181,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3672ACBD2336205A00F9727B /* crypto_kx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_kx.h; sourceTree = "<group>"; };
+		3672ACBE2336205B00F9727B /* crypto_aead_xchacha20poly1305.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_aead_xchacha20poly1305.h; sourceTree = "<group>"; };
+		3672ACBF2336205B00F9727B /* crypto_secretbox_xchacha20poly1305.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_secretbox_xchacha20poly1305.h; sourceTree = "<group>"; };
+		3672ACC02336205B00F9727B /* crypto_kdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_kdf.h; sourceTree = "<group>"; };
+		3672ACC12336205B00F9727B /* crypto_secretstream_xchacha20poly1305.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_secretstream_xchacha20poly1305.h; sourceTree = "<group>"; };
+		3672ACC22336205B00F9727B /* crypto_stream_xchacha20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_stream_xchacha20.h; sourceTree = "<group>"; };
+		3672ACC32336205B00F9727B /* crypto_scalarmult_ed25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_scalarmult_ed25519.h; sourceTree = "<group>"; };
+		3672ACC42336205B00F9727B /* crypto_scalarmult_ristretto255.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_scalarmult_ristretto255.h; sourceTree = "<group>"; };
+		3672ACC52336205B00F9727B /* crypto_box_curve25519xchacha20poly1305.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_box_curve25519xchacha20poly1305.h; sourceTree = "<group>"; };
+		3672ACC62336205B00F9727B /* crypto_kdf_blake2b.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_kdf_blake2b.h; sourceTree = "<group>"; };
+		3672ACC82336205B00F9727B /* crypto_core_ed25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_core_ed25519.h; sourceTree = "<group>"; };
+		3672ACC92336205B00F9727B /* crypto_core_curve25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_core_curve25519.h; sourceTree = "<group>"; };
+		3672ACCA2336205B00F9727B /* crypto_pwhash_argon2id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_pwhash_argon2id.h; sourceTree = "<group>"; };
+		3672ACCB2336205B00F9727B /* randombytes_internal_random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = randombytes_internal_random.h; sourceTree = "<group>"; };
+		3672ACCC2336205B00F9727B /* sodium_lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sodium_lib.h; sourceTree = "<group>"; };
+		3672ACCD2336205C00F9727B /* crypto_core_ristretto255.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_core_ristretto255.h; sourceTree = "<group>"; };
 		36A8DCAB1D28D70D00B97D7E /* Sodium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A8DCB61D28D81900B97D7E /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
 		36A8DCB71D28D81900B97D7E /* crypto_aead_aes256gcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_aead_aes256gcm.h; sourceTree = "<group>"; };
@@ -298,6 +346,22 @@
 		36A8DD261D28D82300B97D7E /* includes */ = {
 			isa = PBXGroup;
 			children = (
+				3672ACBE2336205B00F9727B /* crypto_aead_xchacha20poly1305.h */,
+				3672ACC52336205B00F9727B /* crypto_box_curve25519xchacha20poly1305.h */,
+				3672ACC92336205B00F9727B /* crypto_core_curve25519.h */,
+				3672ACC82336205B00F9727B /* crypto_core_ed25519.h */,
+				3672ACCD2336205C00F9727B /* crypto_core_ristretto255.h */,
+				3672ACC62336205B00F9727B /* crypto_kdf_blake2b.h */,
+				3672ACC02336205B00F9727B /* crypto_kdf.h */,
+				3672ACBD2336205A00F9727B /* crypto_kx.h */,
+				3672ACCA2336205B00F9727B /* crypto_pwhash_argon2id.h */,
+				3672ACC32336205B00F9727B /* crypto_scalarmult_ed25519.h */,
+				3672ACC42336205B00F9727B /* crypto_scalarmult_ristretto255.h */,
+				3672ACBF2336205B00F9727B /* crypto_secretbox_xchacha20poly1305.h */,
+				3672ACC12336205B00F9727B /* crypto_secretstream_xchacha20poly1305.h */,
+				3672ACC22336205B00F9727B /* crypto_stream_xchacha20.h */,
+				3672ACCB2336205B00F9727B /* randombytes_internal_random.h */,
+				3672ACCC2336205B00F9727B /* sodium_lib.h */,
 				36A8DCB61D28D81900B97D7E /* core.h */,
 				36A8DCB71D28D81900B97D7E /* crypto_aead_aes256gcm.h */,
 				36A8DCB81D28D81900B97D7E /* crypto_aead_chacha20poly1305.h */,
@@ -398,12 +462,16 @@
 				36A8DD151D28D81900B97D7E /* crypto_stream_salsa2012.h in Headers */,
 				36A8DD1D1D28D81900B97D7E /* crypto_verify_32.h in Headers */,
 				36A8DD571D28DC1C00B97D7E /* Sodium.h in Headers */,
+				3672ACE22336205C00F9727B /* crypto_core_ed25519.h in Headers */,
+				3672ACE82336205C00F9727B /* randombytes_internal_random.h in Headers */,
 				36A8DD0A1D28D81900B97D7E /* crypto_secretbox_xsalsa20poly1305.h in Headers */,
 				36A8DD0F1D28D81900B97D7E /* crypto_sign_edwards25519sha512batch.h in Headers */,
 				36A8DCF11D28D81900B97D7E /* crypto_auth_hmacsha256.h in Headers */,
 				36A8DCF21D28D81900B97D7E /* crypto_auth_hmacsha512.h in Headers */,
 				36A8DCF51D28D81900B97D7E /* crypto_box_curve25519xsalsa20poly1305.h in Headers */,
 				36A8DCFC1D28D81900B97D7E /* crypto_generichash_blake2b.h in Headers */,
+				3672ACEC2336205C00F9727B /* crypto_core_ristretto255.h in Headers */,
+				3672ACD82336205C00F9727B /* crypto_stream_xchacha20.h in Headers */,
 				36A8DD061D28D81900B97D7E /* crypto_pwhash_scryptsalsa208sha256.h in Headers */,
 				36A8DCF71D28D81900B97D7E /* crypto_core_hchacha20.h in Headers */,
 				36A8DD0D1D28D81900B97D7E /* crypto_shorthash.h in Headers */,
@@ -415,23 +483,32 @@
 				36A8DD051D28D81900B97D7E /* crypto_pwhash_argon2i.h in Headers */,
 				36A8DD141D28D81900B97D7E /* crypto_stream_salsa208.h in Headers */,
 				36A8DD0E1D28D81900B97D7E /* crypto_sign_ed25519.h in Headers */,
+				3672ACCE2336205C00F9727B /* crypto_kx.h in Headers */,
 				36A8DD1A1D28D81900B97D7E /* crypto_uint32.h in Headers */,
+				3672ACE62336205C00F9727B /* crypto_pwhash_argon2id.h in Headers */,
+				3672ACD42336205C00F9727B /* crypto_kdf.h in Headers */,
 				36A8DD0B1D28D81900B97D7E /* crypto_secretbox.h in Headers */,
 				36A8DCF01D28D81900B97D7E /* crypto_aead_chacha20poly1305.h in Headers */,
 				36A8DCFE1D28D81900B97D7E /* crypto_hash_sha256.h in Headers */,
+				3672ACD22336205C00F9727B /* crypto_secretbox_xchacha20poly1305.h in Headers */,
+				3672ACD62336205C00F9727B /* crypto_secretstream_xchacha20poly1305.h in Headers */,
 				36A8DCF81D28D81900B97D7E /* crypto_core_hsalsa20.h in Headers */,
 				36A8DD071D28D81900B97D7E /* crypto_pwhash.h in Headers */,
 				36A8DCEF1D28D81900B97D7E /* crypto_aead_aes256gcm.h in Headers */,
 				36A8DD1E1D28D81900B97D7E /* crypto_verify_64.h in Headers */,
 				36A8DD241D28D81900B97D7E /* utils.h in Headers */,
 				36A8DCF41D28D81900B97D7E /* crypto_auth.h in Headers */,
+				3672ACEA2336205C00F9727B /* sodium_lib.h in Headers */,
 				36A8DCFA1D28D81900B97D7E /* crypto_core_salsa208.h in Headers */,
 				36A8DCFF1D28D81900B97D7E /* crypto_hash_sha512.h in Headers */,
 				36A8DD171D28D81900B97D7E /* crypto_stream.h in Headers */,
 				36A8DD091D28D81900B97D7E /* crypto_scalarmult.h in Headers */,
+				3672ACE42336205C00F9727B /* crypto_core_curve25519.h in Headers */,
+				3672ACD02336205C00F9727B /* crypto_aead_xchacha20poly1305.h in Headers */,
 				36A8DD211D28D81900B97D7E /* randombytes_sysrandom.h in Headers */,
 				36A8DD101D28D81900B97D7E /* crypto_sign.h in Headers */,
 				36A8DD201D28D81900B97D7E /* randombytes_salsa20_random.h in Headers */,
+				3672ACDA2336205C00F9727B /* crypto_scalarmult_ed25519.h in Headers */,
 				36A8DD081D28D81900B97D7E /* crypto_scalarmult_curve25519.h in Headers */,
 				36A8DCF61D28D81900B97D7E /* crypto_box.h in Headers */,
 				36A8DD161D28D81900B97D7E /* crypto_stream_xsalsa20.h in Headers */,
@@ -446,9 +523,12 @@
 				36A8DD0C1D28D81900B97D7E /* crypto_shorthash_siphash24.h in Headers */,
 				36A8DCFB1D28D81900B97D7E /* crypto_core_salsa2012.h in Headers */,
 				36A8DD1F1D28D81900B97D7E /* export.h in Headers */,
+				3672ACE02336205C00F9727B /* crypto_kdf_blake2b.h in Headers */,
 				36A8DD181D28D81900B97D7E /* crypto_uint8.h in Headers */,
+				3672ACDE2336205C00F9727B /* crypto_box_curve25519xchacha20poly1305.h in Headers */,
 				36A8DD041D28D81900B97D7E /* crypto_onetimeauth.h in Headers */,
 				36A8DCF31D28D81900B97D7E /* crypto_auth_hmacsha512256.h in Headers */,
+				3672ACDC2336205C00F9727B /* crypto_scalarmult_ristretto255.h in Headers */,
 				36A8DD001D28D81900B97D7E /* crypto_hash.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,12 +543,16 @@
 				36A8DD881D28DC4F00B97D7E /* crypto_verify_16.h in Headers */,
 				36A8DD671D28DC4F00B97D7E /* crypto_core_salsa208.h in Headers */,
 				36A8DD891D28DC4F00B97D7E /* crypto_verify_32.h in Headers */,
+				3672ACE32336205C00F9727B /* crypto_core_ed25519.h in Headers */,
+				3672ACE92336205C00F9727B /* randombytes_internal_random.h in Headers */,
 				36A8DD811D28DC4F00B97D7E /* crypto_stream_salsa2012.h in Headers */,
 				36A8DD8C1D28DC4F00B97D7E /* randombytes.h in Headers */,
 				36A8DD711D28DC4F00B97D7E /* crypto_pwhash.h in Headers */,
 				36A8DD701D28DC4F00B97D7E /* crypto_onetimeauth_poly1305.h in Headers */,
 				36A8DD611D28DC4F00B97D7E /* crypto_box.h in Headers */,
 				36A8DD7F1D28DC4F00B97D7E /* crypto_stream_chacha20.h in Headers */,
+				3672ACED2336205C00F9727B /* crypto_core_ristretto255.h in Headers */,
+				3672ACD92336205C00F9727B /* crypto_stream_xchacha20.h in Headers */,
 				36A8DD791D28DC4F00B97D7E /* crypto_shorthash_siphash24.h in Headers */,
 				36A8DD651D28DC4F00B97D7E /* crypto_core_salsa20.h in Headers */,
 				36A8DD561D28DC1B00B97D7E /* Sodium.h in Headers */,
@@ -480,23 +564,32 @@
 				36A8DD6E1D28DC4F00B97D7E /* crypto_int64.h in Headers */,
 				36A8DD631D28DC4F00B97D7E /* crypto_core_hchacha20.h in Headers */,
 				36A8DD5D1D28DC4F00B97D7E /* crypto_auth.h in Headers */,
+				3672ACCF2336205C00F9727B /* crypto_kx.h in Headers */,
 				36A8DD6A1D28DC4F00B97D7E /* crypto_hash.h in Headers */,
+				3672ACE72336205C00F9727B /* crypto_pwhash_argon2id.h in Headers */,
+				3672ACD52336205C00F9727B /* crypto_kdf.h in Headers */,
 				36A8DD7D1D28DC4F00B97D7E /* crypto_stream.h in Headers */,
 				36A8DD641D28DC4F00B97D7E /* crypto_core_hsalsa20.h in Headers */,
 				36A8DD6B1D28DC4F00B97D7E /* crypto_hash_sha256.h in Headers */,
+				3672ACD32336205C00F9727B /* crypto_secretbox_xchacha20poly1305.h in Headers */,
+				3672ACD72336205C00F9727B /* crypto_secretstream_xchacha20poly1305.h in Headers */,
 				36A8DD621D28DC4F00B97D7E /* crypto_box_curve25519xsalsa20poly1305.h in Headers */,
 				36A8DD6F1D28DC4F00B97D7E /* crypto_onetimeauth.h in Headers */,
 				36A8DD761D28DC4F00B97D7E /* crypto_secretbox.h in Headers */,
 				36A8DD8A1D28DC4F00B97D7E /* crypto_verify_64.h in Headers */,
 				36A8DD741D28DC4F00B97D7E /* crypto_scalarmult.h in Headers */,
 				36A8DD601D28DC4F00B97D7E /* crypto_auth_hmacsha512256.h in Headers */,
+				3672ACEB2336205C00F9727B /* sodium_lib.h in Headers */,
 				36A8DD841D28DC4F00B97D7E /* crypto_uint16.h in Headers */,
 				36A8DD7B1D28DC4F00B97D7E /* crypto_sign_ed25519.h in Headers */,
 				36A8DD8E1D28DC4F00B97D7E /* randombytes_sysrandom.h in Headers */,
 				36A8DD681D28DC4F00B97D7E /* crypto_generichash.h in Headers */,
+				3672ACE52336205C00F9727B /* crypto_core_curve25519.h in Headers */,
+				3672ACD12336205C00F9727B /* crypto_aead_xchacha20poly1305.h in Headers */,
 				36A8DD861D28DC4F00B97D7E /* crypto_uint64.h in Headers */,
 				36A8DD8D1D28DC4F00B97D7E /* randombytes_salsa20_random.h in Headers */,
 				36A8DD6D1D28DC4F00B97D7E /* crypto_int32.h in Headers */,
+				3672ACDB2336205C00F9727B /* crypto_scalarmult_ed25519.h in Headers */,
 				36A8DD5A1D28DC4F00B97D7E /* core.h in Headers */,
 				36A8DD721D28DC4F00B97D7E /* crypto_pwhash_argon2i.h in Headers */,
 				36A8DD801D28DC4F00B97D7E /* crypto_stream_salsa20.h in Headers */,
@@ -511,9 +604,12 @@
 				36A8DD921D28DC4F00B97D7E /* version.h in Headers */,
 				36A8DD7E1D28DC4F00B97D7E /* crypto_stream_aes128ctr.h in Headers */,
 				36A8DD8B1D28DC4F00B97D7E /* export.h in Headers */,
+				3672ACE12336205C00F9727B /* crypto_kdf_blake2b.h in Headers */,
 				36A8DD781D28DC4F00B97D7E /* crypto_shorthash.h in Headers */,
+				3672ACDF2336205C00F9727B /* crypto_box_curve25519xchacha20poly1305.h in Headers */,
 				36A8DD5F1D28DC4F00B97D7E /* crypto_auth_hmacsha512.h in Headers */,
 				36A8DD731D28DC4F00B97D7E /* crypto_pwhash_scryptsalsa208sha256.h in Headers */,
+				3672ACDD2336205C00F9727B /* crypto_scalarmult_ristretto255.h in Headers */,
 				36A8DD751D28DC4F00B97D7E /* crypto_scalarmult_curve25519.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -820,7 +916,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Sodium/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sodium",
@@ -849,7 +949,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Sodium/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sodium",
@@ -878,7 +982,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sodium/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sodium",
@@ -908,7 +1016,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sodium/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sodium",
@@ -931,7 +1043,11 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SodiumTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.SodiumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -944,7 +1060,11 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SodiumTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.SodiumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -957,7 +1077,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "SodiumTests-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.zhuhaow.SodiumTests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -972,7 +1096,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "SodiumTests-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "me.zhuhaow.SodiumTests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
