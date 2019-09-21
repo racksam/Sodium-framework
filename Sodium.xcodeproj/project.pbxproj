@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3672ACB7233613B900F9727B /* libsodium-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DD271D28D89F00B97D7E /* libsodium-macOS.a */; };
 		36A8DCEE1D28D81900B97D7E /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB61D28D81900B97D7E /* core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DCEF1D28D81900B97D7E /* crypto_aead_aes256gcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB71D28D81900B97D7E /* crypto_aead_aes256gcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DCF01D28D81900B97D7E /* crypto_aead_chacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB81D28D81900B97D7E /* crypto_aead_chacha20poly1305.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,7 +67,6 @@
 		36A8DD2B1D28D9AB00B97D7E /* sodium-lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DD2A1D28D9AB00B97D7E /* sodium-lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD561D28DC1B00B97D7E /* Sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DD551D28DB9400B97D7E /* Sodium.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD571D28DC1C00B97D7E /* Sodium.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DD551D28DB9400B97D7E /* Sodium.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36A8DD581D28DC4000B97D7E /* libsodium-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DD271D28D89F00B97D7E /* libsodium-macOS.a */; };
 		36A8DD591D28DC4600B97D7E /* libsodium-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A8DD521D28DAD000B97D7E /* libsodium-iOS.a */; };
 		36A8DD5A1D28DC4F00B97D7E /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB61D28D81900B97D7E /* core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		36A8DD5B1D28DC4F00B97D7E /* crypto_aead_aes256gcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A8DCB71D28D81900B97D7E /* crypto_aead_aes256gcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -224,7 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A8DD581D28DC4000B97D7E /* libsodium-macOS.a in Frameworks */,
+				3672ACB7233613B900F9727B /* libsodium-macOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +255,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3672ACB6233613B900F9727B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		36A8DCA11D28D70D00B97D7E = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +269,7 @@
 				36A8DCAD1D28D70D00B97D7E /* Sodium */,
 				36A8DD981D292B9A00B97D7E /* SodiumTests */,
 				36A8DDAA1D29409800B97D7E /* SodiumTests-iOS */,
+				3672ACB6233613B900F9727B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -618,6 +626,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 36A8DCA11D28D70D00B97D7E;
@@ -803,6 +812,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -817,6 +827,7 @@
 					"$(PROJECT_DIR)/Sodium/libs",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.Sodium;
 				PRODUCT_NAME = Sodium;
@@ -830,6 +841,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -844,6 +856,7 @@
 					"$(PROJECT_DIR)/Sodium/libs",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.Sodium;
 				PRODUCT_NAME = Sodium;
@@ -857,6 +870,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -870,6 +884,7 @@
 					"$(PROJECT_DIR)/Sodium",
 					"$(PROJECT_DIR)/Sodium/libs",
 				);
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.Sodium;
 				PRODUCT_NAME = Sodium;
@@ -885,6 +900,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -898,6 +914,7 @@
 					"$(PROJECT_DIR)/Sodium",
 					"$(PROJECT_DIR)/Sodium/libs",
 				);
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.Sodium;
 				PRODUCT_NAME = Sodium;
